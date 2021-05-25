@@ -26,6 +26,9 @@ If you pip install anything, make sure you are doing it in the venv and then do.
 
 <code>pip freeze > requirements.txt</code>
 
+Run server
+
+<code>flask run</code>
 
 ### Frontend Setup
 
