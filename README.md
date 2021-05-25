@@ -36,11 +36,12 @@ If you pip install anything, make sure you are doing it in the venv and then do.
 To get all the resources that everyone has installed use:
 <code>npm install</code>
 
-To create a production build run the following command:
-<code>npm run build</code>
-
 To start the server run (when you save changes you do not have to restart the server it'll update automatically - good for development):
 <code>npm start</code>
+
+To create a production build run the following command (do not use this for local testing):
+<code>npm run build</code>
+
 
 
 
