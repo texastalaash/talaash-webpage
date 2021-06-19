@@ -1,13 +1,16 @@
-import './App.css';
-import Hello from './Hello'
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import Section from "./components/Section";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <body>
-        <Hello/>
-      </body>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Section />
+      </div>
+    </Router>
   );
 }
 
