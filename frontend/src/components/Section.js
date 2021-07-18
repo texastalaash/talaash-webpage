@@ -5,6 +5,7 @@ import Team from "./pages/Team/Team";
 import Team2 from "./pages/Team/2.0/Team2";
 import Performances from "./pages/Performances";
 import { Route } from "react-router-dom";
+import Profile from "./pages/Profile/Profile";
 
 export class Section extends Component {
   render() {
@@ -14,6 +15,7 @@ export class Section extends Component {
         <Route path="/about" component={About} />
         <Route path="/team" component={Team}></Route>
         <Route path="/performances" component={Performances}></Route>
+        <Route path="/Profile" component={Profile}></Route>
         <Route path="/2.0" component={Team2} />
       </section>
     );
