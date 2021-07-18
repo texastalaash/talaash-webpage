@@ -13,6 +13,31 @@ export class Home extends Component {
               <p>UT Austin's Premier Male Fusion Dance Team</p>
             </div>
           </FadeIn>
+          <div className="social-container">
+            <div className="social-medias">
+              <a
+                className="instagram"
+                href="https://instagram.com/texastalaash"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                className="facebook "
+                href="https://www.facebook.com/txtalaash"
+                target="_blank"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                className="youtube"
+                href="https://www.youtube.com/channel/UCEqHo5E7qQQmawb3c14Zl-w"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
         </section>
         <div className="home-about">
           <h1>About Talaash</h1>

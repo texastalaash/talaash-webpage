@@ -1,0 +1,15 @@
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.slides {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+}
+
+.team-image-container {
+}
