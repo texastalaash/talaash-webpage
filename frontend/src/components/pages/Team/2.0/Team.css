@@ -1,0 +1,76 @@
+.team-container {
+  margin-top: 170px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.top-slides-display {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.team-container .team-title {
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.team-container hr {
+  border: none;
+  height: 1px;
+  width: 900px;
+  background-color: #656b6c;
+  margin-bottom: 50px;
+}
+
+.floating-left {
+  position: absolute;
+  width: 500px;
+  left: -185px;
+  top: -180px;
+  z-index: -1;
+  /* display: none; */
+}
+
+.floating-right {
+  position: absolute;
+  width: 350px;
+  top: -130px;
+  right: -120px;
+  z-index: -1;
+}
+
+.team-container::before {
+  content: "";
+  background-image: url("/src/assets/logo.png");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 700px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  animation: bgFade 1.5s 0.2s forwards;
+}
+
+@keyframes bgFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.09;
+  }
+}

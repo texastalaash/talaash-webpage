@@ -1,0 +1,16 @@
+.timeline-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.timeline-container h1 {
+  color: white;
+}
+
+.timeline-container a {
+  color: #38af9b;
+  text-decoration: none;
+  margin: 20px;
+}

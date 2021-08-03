@@ -7,7 +7,6 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 20) {
       setNavbar(true);
     } else {
@@ -32,9 +31,6 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/performances">Performances</Link>
-          </li>
-          <li>
-            <Link to="/2.0">2.0</Link>
           </li>
           <li className="close">X</li>
         </ul>

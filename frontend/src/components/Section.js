@@ -1,22 +1,23 @@
 import React, { Component } from "react";
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
-import Team from "./pages/Team/Team";
+import Timeline from "./pages/Team/Timeline/Timeline";
 import Team2 from "./pages/Team/2.0/Team2";
-import Performances from "./pages/Performances";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Profile from "./pages/Profile/Profile";
 
 export class Section extends Component {
   render() {
     return (
       <section>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} />
-        <Route path="/team" component={Team}></Route>
-        <Route path="/performances" component={Performances}></Route>
-        <Route path="/Profile" component={Profile}></Route>
-        <Route path="/2.0" component={Team2} />
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} />
+          <Route exact path="/team" component={Timeline}></Route>
+          <Route exact path="/team/:year" component={Team2} />
+          <Route path="/performances" component={Team2}></Route>
+          <Route path="/profile/:name" component={Profile}></Route>
+        </Switch>
       </section>
     );
   }
