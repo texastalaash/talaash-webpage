@@ -25,17 +25,17 @@ const Team2 = () => {
       <div className="team-container">
         <div className="top-slides-display">
           <h1 className="team-title">Talaash {year}.0</h1>
-          
-          <Slider images={sliderImages}/>
+
+          <Slider images={sliderImages} />
           <img
             className="floating-left"
-            src="/assets/team-pics/2/floating-png/Adithya.png"
-            alt="arnav-floating"
+            src={`/assets/team-pics/${year}/floating/left.png`}
+            alt="floating-left"
           />
           <img
             className="floating-right"
-            src="/assets/team-pics/2/floating-png/Arnav.png"
-            alt="adi-floating"
+            src={`/assets/team-pics/${year}/floating/right.png`}
+            alt="floating-right"
           />
         </div>
         <hr />
