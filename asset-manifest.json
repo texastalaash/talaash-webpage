@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/talaash-webpage/static/css/main.a63b78ef.chunk.css",
+    "main.js": "/talaash-webpage/static/js/main.3d6004ec.chunk.js",
+    "main.js.map": "/talaash-webpage/static/js/main.3d6004ec.chunk.js.map",
+    "runtime-main.js": "/talaash-webpage/static/js/runtime-main.9516b2f8.js",
+    "runtime-main.js.map": "/talaash-webpage/static/js/runtime-main.9516b2f8.js.map",
+    "static/js/2.21bedc91.chunk.js": "/talaash-webpage/static/js/2.21bedc91.chunk.js",
+    "static/js/2.21bedc91.chunk.js.map": "/talaash-webpage/static/js/2.21bedc91.chunk.js.map",
+    "index.html": "/talaash-webpage/index.html",
+    "static/css/main.a63b78ef.chunk.css.map": "/talaash-webpage/static/css/main.a63b78ef.chunk.css.map",
+    "static/js/2.21bedc91.chunk.js.LICENSE.txt": "/talaash-webpage/static/js/2.21bedc91.chunk.js.LICENSE.txt",
+    "static/media/logo.50363529.svg": "/talaash-webpage/static/media/logo.50363529.svg",
+    "static/media/App.css": "/talaash-webpage/static/media/raw-logo.0a102ddf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9516b2f8.js",
+    "static/js/2.21bedc91.chunk.js",
+    "static/css/main.a63b78ef.chunk.css",
+    "static/js/main.3d6004ec.chunk.js"
+  ]
+}
