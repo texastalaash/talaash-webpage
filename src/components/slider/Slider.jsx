@@ -1,54 +1,56 @@
 import "./Slider.css";
-import goofy from "../../assets/team-pics/2/photoshoot/group/2.0-goofy.jpg";
-import normal from "../../assets/team-pics/2/photoshoot/group/2.0-normal.jpg";
-import boat from "../../assets/team-pics/2/other/boat.jpg";
-import playground from "../../assets/team-pics/2/other/playground.jpg";
 import { useEffect } from "react";
 
-const Slider = () => {
+const Slider = ({ images }) => {
   useEffect(() => {
-    let counter = 1;
+    document.getElementById("radio1").checked = true;
+    var counter = 1;
     const interval = setInterval(() => {
+      var buttons = document.getElementsByName("radio-btn");
+      console.log(buttons)
+      for (var i = 1; i <= buttons.length; i++) {
+        if (buttons[i-1].checked) {
+          counter = (i % 5) + 1;
+        }
+      }
       document.getElementById("radio" + counter).checked = true;
-      counter++;
-      if (counter > 4) counter = 1;
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+
   return (
     <div className="slider-border">
       <div className="slider">
         <div className="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
+          {images.map((img, index) => (
+            <input
+              key={index}
+              type="radio"
+              name="radio-btn"
+              id={`radio${index + 1}`}
+            />
+          ))}
 
-          <div className="slide first">
-            <img src={goofy} alt="" />
-          </div>
-          <div className="slide">
-            <img src={normal} alt="" />
-          </div>
-          <div className="slide">
-            <img src={playground} alt="" />
-          </div>
-          <div className="slide">
-            <img src={boat} alt="" />
-          </div>
+          {images.map((img, index) => (
+            <div className={index === 0 ? "slide first" : "slide"} key={index}>
+              <img src={img} alt="" />
+            </div>
+          ))}
 
           <div className="navigation-auto">
-            <div className="auto-btn1"></div>
-            <div className="auto-btn2"></div>
-            <div className="auto-btn3"></div>
-            <div className="auto-btn4"></div>
+            {images.map((img, index) => (
+              <div key={index} className={`auto-btn${index + 1}`}></div>
+            ))}
           </div>
-
           <div className="navigation-manual">
-            <label htmlFor="radio1" className="manual-btn"></label>
-            <label htmlFor="radio2" className="manual-btn"></label>
-            <label htmlFor="radio3" className="manual-btn"></label>
-            <label htmlFor="radio4" className="manual-btn"></label>
+            {images.map((img, index) => (
+              <label
+                htmlFor={`radio${index + 1}`}
+                className="manual-btn"
+                key={index}
+              ></label>
+            ))}
           </div>
         </div>
       </div>

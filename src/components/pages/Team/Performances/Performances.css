@@ -1,0 +1,28 @@
+.performances-wrapper h1 {
+  font-size: 30px;
+  color: #64aaa1;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.performances-wrapper {
+  /* width: 80%; */
+  margin-bottom: 100px;
+  width: 70%;
+}
+
+.videos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  margin: 20px;
+  width: 400px;
+  height: 237px;
+  border: #bbc2be 1px solid;
+  padding: 10px;
+  overflow: hidden;
+}
