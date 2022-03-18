@@ -2,6 +2,7 @@ import "./Slider.css";
 import { useEffect } from "react";
 
 const Slider = ({ images }) => {
+  console.log(images.length)
   useEffect(() => {
     document.getElementById("radio1").checked = true;
     var counter = 1;
@@ -10,7 +11,7 @@ const Slider = ({ images }) => {
       console.log(buttons)
       for (var i = 1; i <= buttons.length; i++) {
         if (buttons[i-1].checked) {
-          counter = (i % 5) + 1;
+          counter = (i % images.length) + 1;
         }
       }
       document.getElementById("radio" + counter).checked = true;

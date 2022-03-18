@@ -9,6 +9,8 @@ const TeamBubbles = ({team}) => {
   useEffect(() => {
   }, []);
 
+  console.log(team);
+
   return (
     <div className="team-bubble-container">
       <BubbleSection

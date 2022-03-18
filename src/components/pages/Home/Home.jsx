@@ -6,7 +6,7 @@ export class Home extends Component {
   render() {
     return (
       <>
-        <section className="cover">
+        <div className="cover">
           <FadeIn>
             <div className="cover-text">
               <h1>TEXAS TALAASH</h1>
@@ -35,7 +35,7 @@ export class Home extends Component {
               </a>
             </div>
           </div>
-        </section>
+        </div>
         <div className="home-about">
           <h1>About Talaash</h1>
           <p>

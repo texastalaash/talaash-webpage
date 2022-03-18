@@ -196,7 +196,37 @@ export const data = {
     ],
   },
   3: {
-    team: [],
+    team: [
+      {
+        id: 1,
+        name: "Aayush Singh",
+        role: "dancer",
+        email: "aayushsingh0318@gmail.com",
+        insta: "instauser",
+      },
+      {
+        id: 2,
+        name: "Abhisaradev Murmu",
+        role: "captain",
+        email: "abhisaradev@gmail.com",
+        insta: "instauser",
+      },
+      {
+        id: 3,
+        name: "Abhijit Harihara",
+        role: "dancer",
+        email: "abhiharihara@gmail.com",
+        insta: "instauser",
+      },
+      {
+        id: 4,
+        name: "Adithya Harihara",
+        role: "captain",
+        email: "adithyaharihara@gmail.com",
+        insta: "instauser",
+      },
+    ],
+    sliderTotal: 5,
     performances: [
       "https://www.youtube.com/watch?v=cML5p3-Lotc",
       "https://www.youtube.com/watch?v=NrIFmcSifHM",

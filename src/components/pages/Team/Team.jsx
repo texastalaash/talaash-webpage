@@ -11,11 +11,11 @@ const Team2 = () => {
   const { year } = useParams();
 
   const teamdata = data[year].team;
+  console.log(data[year]);
   const performances = data[year].performances;
-
   const sliderImagePath = `../../../assets/team-pics/${year}/slider/`;
   const sliderImages = [];
-  for (var i = 1; i <= 5; i++){
+  for (var i = 1; i <= data[year].sliderTotal; i++) {
     sliderImages.push(sliderImagePath + i + ".jpg");
   }
 

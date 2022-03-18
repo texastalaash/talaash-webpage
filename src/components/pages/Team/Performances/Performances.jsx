@@ -2,7 +2,6 @@ import "./Performances.css";
 import ReactPlayer from "react-player";
 
 const Performances = ({ videos }) => {
-  console.log(videos);
   return (
     <div className="performances-wrapper">
       <h1>Performances</h1>
