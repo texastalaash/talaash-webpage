@@ -7,8 +7,8 @@
 .cover {
   position: relative;
   width: 100%;
-  background: url("../../../assets/team-pics/2/photoshoot/group/2.0-normal-opaque.png")
-    no-repeat top center;
+  /* background: url("../../../assets/team-pics/2/photoshoot/group/2.0-normal-opaque.png")
+    no-repeat top center; */
   background-size: cover;
   padding: 30vh 0;
 }
