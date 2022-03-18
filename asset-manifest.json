@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/talaash-webpage/static/css/main.a63b78ef.chunk.css",
-    "main.js": "/talaash-webpage/static/js/main.3d6004ec.chunk.js",
-    "main.js.map": "/talaash-webpage/static/js/main.3d6004ec.chunk.js.map",
-    "runtime-main.js": "/talaash-webpage/static/js/runtime-main.9516b2f8.js",
-    "runtime-main.js.map": "/talaash-webpage/static/js/runtime-main.9516b2f8.js.map",
-    "static/js/2.21bedc91.chunk.js": "/talaash-webpage/static/js/2.21bedc91.chunk.js",
-    "static/js/2.21bedc91.chunk.js.map": "/talaash-webpage/static/js/2.21bedc91.chunk.js.map",
-    "index.html": "/talaash-webpage/index.html",
-    "static/css/main.a63b78ef.chunk.css.map": "/talaash-webpage/static/css/main.a63b78ef.chunk.css.map",
-    "static/js/2.21bedc91.chunk.js.LICENSE.txt": "/talaash-webpage/static/js/2.21bedc91.chunk.js.LICENSE.txt",
-    "static/media/logo.50363529.svg": "/talaash-webpage/static/media/logo.50363529.svg",
-    "static/media/App.css": "/talaash-webpage/static/media/raw-logo.0a102ddf.svg"
+    "main.css": "/static/css/main.37b0e70d.chunk.css",
+    "main.js": "/static/js/main.558e5360.chunk.js",
+    "main.js.map": "/static/js/main.558e5360.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b9a45410.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b9a45410.js.map",
+    "static/js/2.21bedc91.chunk.js": "/static/js/2.21bedc91.chunk.js",
+    "static/js/2.21bedc91.chunk.js.map": "/static/js/2.21bedc91.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.37b0e70d.chunk.css.map": "/static/css/main.37b0e70d.chunk.css.map",
+    "static/js/2.21bedc91.chunk.js.LICENSE.txt": "/static/js/2.21bedc91.chunk.js.LICENSE.txt",
+    "static/media/logo.50363529.svg": "/static/media/logo.50363529.svg",
+    "static/media/App.css": "/static/media/raw-logo.0a102ddf.svg",
+    "static/media/Home.css": "/static/media/team.047779fa.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9516b2f8.js",
+    "static/js/runtime-main.b9a45410.js",
     "static/js/2.21bedc91.chunk.js",
-    "static/css/main.a63b78ef.chunk.css",
-    "static/js/main.3d6004ec.chunk.js"
+    "static/css/main.37b0e70d.chunk.css",
+    "static/js/main.558e5360.chunk.js"
   ]
 }
