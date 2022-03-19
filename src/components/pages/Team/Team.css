@@ -1,11 +1,12 @@
 .team-container {
-  margin-top: 170px;
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
+  margin-top: 170px;
 }
+
 
 .top-slides-display {
   display: flex;

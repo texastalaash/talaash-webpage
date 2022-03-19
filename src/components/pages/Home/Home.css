@@ -5,34 +5,28 @@
 }
 
 .cover {
-  position: relative;
-  width: 100%;
-  /* background: url("/src/assets/2.0-normal-opaque.png")
-    no-repeat top center; */
-  background-size: cover;
-  padding: 30vh 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cover::before {    
-      content: "";
-      background: url("/src/assets/team.jpg");
+.banner{
+      width: 100%;
+    height: 100vh;
+    background-image: url("/src/assets/cover.jpg");
+    background-size: cover;
       background-position:50% 35%;
-      position: absolute;
-      background-size: cover;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.2;
+    z-index: 3;
+    position: relative;
 }
 
 .cover-text {
-  position: relative;
   /* width: 100%; */
   text-align: center;
   color: white;
-
   opacity: 1;
+  padding: 40vh;
 }
 
 .cover-text h1 {
@@ -73,7 +67,8 @@
 .social-medias {
   display: flex;
   justify-content: space-around;
-  margin: 0px 250px;
+  margin: 0px 25%;
+  /* margin: 0 auto; */
   margin-bottom: 30px;
   position: relative;
   bottom: 0px;
