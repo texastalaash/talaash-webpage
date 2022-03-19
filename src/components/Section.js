@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
-import Timeline from "./pages/Team/Timeline/Timeline";
 import Team from "./pages/Team/Team";
 import { Route, Switch } from "react-router-dom";
 import Profile from "./pages/Profile/Profile";
+import Timeline from "./pages/Home/Timeline/Timeline";
 
 export class Section extends Component {
   render() {

@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Timeline.css";
+import { YearData } from "./YearData";
 
 const Timeline = () => {
   return (
     <section class="timeline-section">
       {/* <h1>Timeline</h1>
-    <Link to="/team/1">1.0</Link>
     <Link to="/team/2">2.0</Link>
     <Link to="/team/3">3.0</Link> */}
       <h1>Team History</h1>
@@ -14,20 +14,23 @@ const Timeline = () => {
         <ul>
           <li>
             <div className="timeline-content">
-              {/* <h2>Talaash 3.0</h2> */}
-              <img src="/assets/team-pics/3/team.jpg" alt="team image" />
+              <Link to="/team/3">
+                <img src="/assets/team-pics/3/team.jpg" alt="team image" />
+              </Link>
             </div>
           </li>
           <li>
             <div className="timeline-content">
-              {/* <h2>Talaash 3.0</h2> */}
-              <img src="/assets/team-pics/3/team.jpg" alt="team image" />
+              <Link to="/team/2">
+                <img src="/assets/team-pics/3/team.jpg" alt="team image" />
+              </Link>
             </div>
           </li>
           <li>
             <div className="timeline-content">
-              {/* <h2>Talaash 3.0</h2> */}
-              <img src="/assets/team-pics/3/team.jpg" alt="team image" />
+              <Link to="/team/1">
+                <img src="/assets/team-pics/3/team.jpg" alt="team image" />
+              </Link>
             </div>
           </li>
         </ul>
