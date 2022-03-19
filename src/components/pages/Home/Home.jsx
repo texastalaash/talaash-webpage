@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Home.css";
 import FadeIn from "react-fade-in";
 import Timeline from "./Timeline/Timeline";
+import Floatingshapes from "../../FloatingShapes/Floatingshapes";
 
 export class Home extends Component {
   render() {
@@ -40,18 +41,20 @@ export class Home extends Component {
           </div>
         </div>
         <div className="home-about">
-          <h1>About Talaash</h1>
-          <p>
-            Texas Talaash, established in 2019, is a non-profit all male
-            competetive Bollywood Fusion dance team at the University of Texas
-            at Austin. We choreograph and perform across the nation and events
-            on campus in dance styles such as bollywood, hiphop, bhangra, kuthu,
-            and contemporary. We also strive to inspire students to build
-            self-esteem, discipline, and self-confidence through dance arts
-            education.
-          </p>
+          <div className="about-content">
+            <h1>About Talaash</h1>
+            <p>
+              Texas Talaash, established in 2019, is a non-profit all male
+              competetive Bollywood Fusion dance team at the University of Texas
+              at Austin. We choreograph and perform across the nation and events
+              on campus in dance styles such as bollywood, hiphop, bhangra,
+              kuthu, and contemporary. We also strive to inspire students to
+              build self-esteem, discipline, and self-confidence through dance
+              arts education.
+            </p>
+          </div>
+          <Floatingshapes />
         </div>
-
         <Timeline />
       </>
     );

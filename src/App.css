@@ -17,7 +17,7 @@ section {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 400px;
-  opacity: 0.09;
+  opacity: 0.02;
   animation: fadeIn linear 1.5s;
   z-index: 0;
   -webkit-animation: fadeIn linear 1.5s;

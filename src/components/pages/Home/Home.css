@@ -39,27 +39,40 @@
   font-size: 19px;
 }
 
-.home-about {
-  width: 100%;
-  margin-bottom: 500px;
+
+.home-about{
+  /* width: 70%; */
+  display: flex;
+  justify-content: center;
+  /* height: 70vh; */
+}
+.about-content {
+  /* margin-bottom: 500px;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
   margin: 60px auto;
   padding: 0px 150px;
-  max-width: 1200px;
+  max-width: 1200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 200px 20px;
+  line-height: 35px;
 }
 
-.home-about h1 {
-  font-size: 25;
-  margin-bottom: 20px;
+.about-content h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
   color: #64aaa1;
   font-weight: 400;
 }
 
-.home-about p {
+.about-content p {
   color: white;
-  font-size: 29;
+  font-size: 20px;
 
   font-weight: 300;
 }

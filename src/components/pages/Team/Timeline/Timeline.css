@@ -10,13 +10,24 @@
 }
 
 .timeline-section h1 {
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 200;
   margin-bottom: 100px;
   /* text-decoration: underline; */
   position: relative;
-  color: #64aaa1;
-  
+  /* color: #64aaa1; */
+  color:#ffffff;
+  position: relative;
+}
+
+.timeline-section h1::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
+  background-color:#64AAA1;
+  z-index: -1;
 }
 
 /* .timeline-section h1::before {
