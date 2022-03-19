@@ -1,7 +1,7 @@
 import Bubble from "../Bubble/Bubble";
 import "./BubbleSection.css";
 
-const BubbleSection = ({ label, list }) => {
+const BubbleSection = ({ label, list, year }) => {
   return (
     <div className="bubble-section-container">
       <h1>{label}</h1>
@@ -11,6 +11,7 @@ const BubbleSection = ({ label, list }) => {
             key={index}
             name={person.name}
             isCap={person.role === "captain"}
+            year={year}
           />
         ))}
       </div>

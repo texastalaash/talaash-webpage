@@ -4,7 +4,7 @@ import axios from "axios";
 import { Spinner } from "../../../Spinners/Spinners";
 import BubbleSection from "./BubbleSection/BubbleSection";
 
-const TeamBubbles = ({team}) => {
+const TeamBubbles = ({team, year}) => {
 
   useEffect(() => {
   }, []);
@@ -16,16 +16,19 @@ const TeamBubbles = ({team}) => {
       <BubbleSection
         label="Captains"
         list={team.filter((person) => person.role === "captain")}
+        year={year}
       />
       <BubbleSection
         label="Board"
         list={team.filter(
           (person) => person.role !== "captain" && person.role !== "dancer"
         )}
+        year={year}
       />
       <BubbleSection
         label="Dancers"
         list={team.filter((person) => person.role === "dancer")}
+        year={year}
       />
     </div>
   );

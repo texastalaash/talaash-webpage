@@ -17,17 +17,19 @@ const Navbar = () => {
   window.addEventListener("scroll", changeBackground);
   return (
     <header className={navbar ? "navbar active" : "navbar"}>
-      <img className="logo" src={Logo} alt="talaash logo" />
+      <Link to="/">
+        <img className="logo" src={Logo} alt="talaash logo" />
+      </Link>
       <div>
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/profile">Profile</Link>
+            <Link to="/team">Team</Link>
           </li>
           <li>
-            <Link to="/team">Team</Link>
+            <Link to="">Profile</Link>
           </li>
           <li>
             <Link to="/performances">Performances</Link>

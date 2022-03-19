@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Bubble.css";
 
-const Bubble = ({ name, isCap, info }) => {
+const Bubble = ({ name, isCap, info, year }) => {
   let full_name = name.split(" ");
   let first = full_name[0];
   let last = full_name[1];
@@ -12,7 +12,7 @@ const Bubble = ({ name, isCap, info }) => {
       <div className="bubble-container">
         <img
           className="bubble-image"
-          src={"/assets/team-pics/2/headshots/" + name + ".jpg"}
+          src={`/assets/team-pics/${year}/headshots/${name}.jpg`}
           alt={initial}
           onError={() => <h1>hey</h1>}
         />

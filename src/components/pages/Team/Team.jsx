@@ -20,6 +20,20 @@ const Team2 = () => {
   }
 
 
+  function importAll(r) {
+    let images = {};
+    r.keys().forEach((item, index) => {
+      images[item.replace("./", "")] = r(item);
+    });
+    return images;
+  }
+  const images = importAll(
+    require.context('../../../assets/team-pics/2/slider/', false, /\.(png|jpe?g|svg)$/)
+  );
+
+  console.log(teamdata);
+
+
   return (
     <FadeIn>
       <div className="team-container">
@@ -39,7 +53,7 @@ const Team2 = () => {
           />
         </div>
         <hr />
-        <TeamBubbles team={teamdata} />
+        <TeamBubbles team={teamdata} year={year} />
         <hr />
         <Performances videos={performances} />
       </div>

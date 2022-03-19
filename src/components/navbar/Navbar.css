@@ -26,11 +26,11 @@ header .logo {
   width: auto;
   max-height: 50px;
   max-width: 100px;
-  cursor: pointer;
 }
 
-header .logo:hover {
+header a:hover {
   opacity: 0.7;
+  cursor:pointer;
 }
 
 header ul {
