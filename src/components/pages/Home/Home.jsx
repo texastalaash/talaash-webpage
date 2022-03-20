@@ -3,6 +3,7 @@ import "./Home.css";
 import FadeIn from "react-fade-in";
 import Timeline from "./Timeline/Timeline";
 import Floatingshapes from "../../FloatingShapes/Floatingshapes";
+import Team2 from "../Team/Team";
 
 export class Home extends Component {
   render() {
@@ -40,22 +41,28 @@ export class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="home-about">
-          <div className="about-content">
-            <h1>About Talaash</h1>
-            <p>
-              Texas Talaash, established in 2019, is a non-profit all male
-              competetive Bollywood Fusion dance team at the University of Texas
-              at Austin. We choreograph and perform across the nation and events
-              on campus in dance styles such as bollywood, hiphop, bhangra,
-              kuthu, and contemporary. We also strive to inspire students to
-              build self-esteem, discipline, and self-confidence through dance
-              arts education.
-            </p>
+        <div className="home-content">
+          <div className="home-about">
+            <div className="about-content">
+              <h1>About Talaash</h1>
+              <p>
+                Texas Talaash, established in 2019, is a non-profit all male
+                competetive Bollywood Fusion dance team at the University of
+                Texas at Austin. We choreograph and perform across the nation
+                and events on campus in dance styles such as bollywood, hiphop,
+                bhangra, kuthu, and contemporary. We also strive to inspire
+                students to build self-esteem, discipline, and self-confidence
+                through dance arts education.
+              </p>
+            </div>
+            <Floatingshapes />
           </div>
-          <Floatingshapes />
+          <hr />
+          <div className="currentteamcontainer">
+            <h1 className="title">Meet the Team</h1>
+            <Team2 current={true} />
+          </div>
         </div>
-        <Timeline />
       </>
     );
   }

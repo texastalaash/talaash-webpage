@@ -26,7 +26,7 @@
   text-align: center;
   color: white;
   opacity: 1;
-  padding: 40vh;
+  padding: 40vh 0;
 }
 
 .cover-text h1 {
@@ -59,7 +59,7 @@
   justify-content: center;
   text-align: center;
   max-width: 700px;
-  margin: 200px 20px;
+  margin: 250px 20px;
   line-height: 35px;
 }
 
@@ -186,4 +186,34 @@
   background: white;
   z-index: -1;
   text-align: center;
+}
+
+.currentteamcontainer{
+  text-align: center;
+  color: #64aaa1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  /* margin: 0 50px; */
+  /* background-color: rgba(20, 20, 20, 0.534); */
+}
+
+hr{
+  border: 0;
+  border-top: #656b6c 1px solid;
+  margin: 0 5%;
+}
+
+.title{
+  font-size: 60px;
+  font-weight: 400;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: rgba(20, 20, 20, 0.534);
+    /* margin-bottom: 100px; */
+}
+
+.home-content{
+  display: flex;
+  flex-direction: column;
 }
