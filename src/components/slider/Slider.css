@@ -129,7 +129,7 @@
   padding: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .slider {
     width: 350px;
     height: 225px;

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Home.css";
 import FadeIn from "react-fade-in";
-import Timeline from "./Timeline/Timeline";
 import Floatingshapes from "../../FloatingShapes/Floatingshapes";
 import Team2 from "../Team/Team";
+import DanceStyles from "../../DanceStyles/DanceStyles";
 
 export class Home extends Component {
   render() {
@@ -57,7 +57,7 @@ export class Home extends Component {
             </div>
             <Floatingshapes />
           </div>
-          <hr />
+          <DanceStyles />
           <div className="currentteamcontainer">
             <h1 className="title">Meet the Team</h1>
             <Team2 current={true} />

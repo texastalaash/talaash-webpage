@@ -241,11 +241,18 @@ export const data = {
       },
       {
         id: 5,
-        name: "Anand Iyer",
+        name: "I'm Vengeance",
         role: "dancer",
         email: "",
         insta: "",
       },
+      // {
+      //   id: 5,
+      //   name: "Anand Iyer",
+      //   role: "dancer",
+      //   email: "",
+      //   insta: "",
+      // },
       {
         id: 5,
         name: "Anubhav Kamath",

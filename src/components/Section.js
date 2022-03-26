@@ -4,13 +4,15 @@ import About from "./pages/About";
 import Team from "./pages/Team/Team";
 import { Route, Switch } from "react-router-dom";
 import Profile from "./pages/Profile/Profile";
-import Timeline from "./pages/Home/Timeline/Timeline";
+import Timeline from "./pages/Team/Timeline/Timeline";
+import UnderConstruction from "./Underconstruction/UnderConstruction";
 
 export class Section extends Component {
   render() {
     return (
       <section>
         <Switch>
+          <Route path = "" component={UnderConstruction} />
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
           <Route exact path="/team" component={Timeline}></Route>

@@ -32,6 +32,7 @@
   align-items: center;
   position: relative;
   z-index: 2;
+  /* margin: 0 20px; */
 }
 
 .team-container .team-title {
@@ -69,12 +70,12 @@
 }
 
 @media (max-width: 1000px) {
-  .top-slides-display {
+  /* .top-slides-display {
     transform: scale(0.7);
-  }
+  } */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .team-container .team-title {
     color: white;
     font-weight: 400;
@@ -89,7 +90,6 @@
     left: -107px;
     top: -110px;
     z-index: -1;
-    /* display: none; */
   }
 
   .floating-right {
