@@ -1,0 +1,186 @@
+.sponsorship-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.sponsorship-content{
+    margin-left:auto;
+    margin-right: auto;
+    padding: 20px;
+    color: rgb(168, 166, 166);
+    max-width:900px;
+
+}
+
+
+
+
+.sponsorship-content ul {
+    margin-left: 30px;
+}
+
+.sponsor-section{
+    padding-bottom: 50px;
+}
+
+.sponsorship-container h1{
+    color: #64aaa1;
+    font-size: 30px;
+}
+
+.sponsorship-container div h1{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.finances-table{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.sponsorship-content span{
+    color: #64aaa1;
+}
+
+.sponsorship-content li{
+    line-height: 25px;
+}
+
+.sponsorship-content table, th, td{
+    border: 1px solid #64aaa1;
+    border-collapse: collapse;
+}
+
+.sponsorship-content th{
+    padding: 8px;
+    /* margin-right: 50px; */
+    text-align: left;
+    font-weight: 400;
+}
+
+.finances-container p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+.package{
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    width: 230px;
+    background-color: #20333745;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all ease-in 0.1s;
+}
+
+.package h3{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.package:hover{
+    transform: translateY(-4px);
+}
+
+.package-details{
+    padding-bottom: 0;
+}
+
+.packages-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.package-details li{
+    font-size: 10px;
+    list-style: none;
+    line-height: 15px;
+}
+
+.package-details ul{
+    margin-left: 0;
+}
+
+.package h2{
+    text-align: center;
+}
+
+.gold {
+    border: 3px solid #dab420;
+}
+
+.gold h2{
+    color: #dab420;
+}
+
+.bronze {
+    border-color: rgb(195, 125, 68);
+}
+
+.bronze h2{
+    color: rgb(195, 125, 68);
+}
+
+.silver {
+    border-color:rgb(187, 187, 187);
+}
+
+.silver h2{
+    color: rgb(187, 187, 187);
+}
+
+.why-help-container{
+    display: flex;
+}
+
+
+.phone-image img{
+    width: 200px;
+    margin-top: 40px;
+    /* padding-left: 20px; */
+}
+
+
+.benefits-container{
+    display: flex;
+}
+
+.sponsor-shirt img{
+    width: 300px;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px){
+    .sponsor-shirt{
+        position: absolute;
+        top: -400px;
+        right: -20px;
+        z-index: -1;
+    }
+
+    .phone-image img{
+        margin-left: 10%;
+       width: 200px; 
+    }
+
+
+    .benefits-container{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .why-help-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

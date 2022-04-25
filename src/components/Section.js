@@ -10,6 +10,7 @@ import { useEffect } from "react";
 
 import React from 'react'
 import { useLocation } from "react-router-dom";
+import Sponsorship from "./pages/Sponsorship/Sponsorship";
 
 const Section = () => {
     const { pathname } = useLocation();
@@ -31,7 +32,7 @@ const Section = () => {
             />
           )}
         />
-        <Route path="/performances" component={Team}></Route>
+        <Route path="/sponsorship" component={Sponsorship}></Route>
         <Route path="/profile/:name" component={Profile}></Route>
       </Switch>
     </section>
