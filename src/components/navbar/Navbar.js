@@ -46,7 +46,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link to="/legacy">Legacy</Link>
+            <HashLink smooth to="/#contact">Contact</HashLink>
           </li>
           <li className="close">X</li>
         </ul>
