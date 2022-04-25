@@ -69,6 +69,92 @@
   margin: 50px 0;
 }
 
+.season-content {
+  color: #64aaa1;
+  /* padding: 20px 0 0px 0; */
+}
+
+.season-about h1{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.season-content p{
+  color: white;
+}
+
+
+
+.competitions{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+
+.competition img{
+  height: 100px;
+  clip-path: circle();
+}
+
+.competition {
+  padding: 15px;
+}
+
+
+.competition h1{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.competition p{
+  font-size: 12px;
+}
+
+.competition-details{
+  display: flex;
+  flex-direction:column;
+  line-height: 2;
+}
+
+.season-content{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: 100px 50px;
+  line-height: 35px;
+}
+
+.competition .placement{
+  color: #dab420;
+}
+
+.soundcloud-player{
+  font-size: 10px;
+   color: #d818c27b;
+   line-break: anywhere;
+   word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+}
+
+.soundcloud-player a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.soundcloud-container{
+  margin: 50px 0 150px;
+  
+}
+
 @media (max-width: 1000px) {
   /* .top-slides-display {
     transform: scale(0.7);

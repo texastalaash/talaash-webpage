@@ -8,21 +8,29 @@
 
 .performances-wrapper {
   /* width: 80%; */
-  margin-bottom: 100px;
-  width: 70%;
+  /* margin-bottom: 100px; */
+  /* width: 70%; */
+    /* padding: 100px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .videos-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 60vw;
 }
 
 .video-wrapper {
   margin: 20px;
-  width: 400px;
-  height: 237px;
-  border: #bbc2be 1px solid;
+  /* width: 400px;
+  height: 237px; */
+  border: #b8edd979 1px solid;
+  border-radius: 5px;
   padding: 10px;
   overflow: hidden;
 }

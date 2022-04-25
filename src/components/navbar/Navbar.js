@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -26,13 +27,26 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <HashLink smooth to="/#about">
+              About
+            </HashLink>
+          </li>
+          <li>
             <Link to="/team">Team</Link>
+            <ul>
+              <li>
+                <Link to="/team/3">3.0</Link>
+              </li>
+              <li>
+                <Link to="/team/2">2.0</Link>
+              </li>
+              <li>
+                <Link to="/team/1">1.0</Link>
+              </li>
+            </ul>
           </li>
           <li>
-            <Link to="">Profile</Link>
-          </li>
-          <li>
-            <Link to="/performances">Performances</Link>
+            <Link to="/legacy">Legacy</Link>
           </li>
           <li className="close">X</li>
         </ul>

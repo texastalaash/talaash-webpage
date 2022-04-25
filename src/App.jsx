@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Section from "./components/Section";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import Floatingshapes from "./components/FloatingShapes/Floatingshapes";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Section />
         <Footer />
+        <Floatingshapes/>
       </div>
     </Router>
   );

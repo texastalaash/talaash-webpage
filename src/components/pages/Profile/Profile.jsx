@@ -48,9 +48,9 @@ const Profile = () => {
                 </p>
               </div>
               <div className="socials-container">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-snapchat-ghost"></i>
-                <i class="far fa-envelope"></i>
+                <i className="fab fa-instagram"></i>
+                <i className="fab fa-snapchat-ghost"></i>
+                <i className="far fa-envelope"></i>
               </div>
             </div>
           </div>

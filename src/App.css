@@ -4,6 +4,7 @@ section {
 
 .App{
   position: relative;
+  padding-bottom: 100px;
 }
 .App::before {
   content: "";
@@ -31,9 +32,10 @@ section {
     opacity: 0;
   }
   100% {
-    opacity: 0.09;
+    opacity: 0.02;
   }
 }
+
 
 
 .App .section::before {  

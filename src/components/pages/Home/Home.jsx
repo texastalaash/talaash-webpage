@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import "./Home.css";
 import FadeIn from "react-fade-in";
 import Floatingshapes from "../../FloatingShapes/Floatingshapes";
-import Team2 from "../Team/Team";
+import Team from "../Team/Team";
 import DanceStyles from "../../DanceStyles/DanceStyles";
+import Contact from "../../Contact/Contact";
 
 export class Home extends Component {
   render() {
@@ -23,26 +24,26 @@ export class Home extends Component {
                   className="instagram"
                   href="https://instagram.com/texastalaash"
                 >
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a
                   className="facebook "
                   href="https://www.facebook.com/txtalaash"
                 >
-                  <i class="fab fa-facebook"></i>
+                  <i className="fab fa-facebook"></i>
                 </a>
                 <a
                   className="youtube"
                   href="https://www.youtube.com/channel/UCEqHo5E7qQQmawb3c14Zl-w"
                 >
-                  <i class="fab fa-youtube"></i>
+                  <i className="fab fa-youtube"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div className="home-content">
-          <div className="home-about">
+          <div id="about" className="home-about">
             <div className="about-content">
               <h1>About Talaash</h1>
               <p>
@@ -55,13 +56,14 @@ export class Home extends Component {
                 through dance arts education.
               </p>
             </div>
-            <Floatingshapes />
+            {/* <Floatingshapes /> */}
           </div>
           <DanceStyles />
           <div className="currentteamcontainer">
             <h1 className="title">Meet the Team</h1>
-            <Team2 current={true} />
+            <Team current={true} />
           </div>
+          <Contact />
         </div>
       </>
     );

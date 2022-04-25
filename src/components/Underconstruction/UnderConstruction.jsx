@@ -3,7 +3,6 @@ import './UnderConstruction.css'
 
 const UnderConstruction = () => {
   return (
-    <section className="under-construction-logo">
       <div className="under-construction-content container">
         <div class="text">
           <p>SITE UNDER CONSTRUCTION</p>
@@ -14,7 +13,6 @@ const UnderConstruction = () => {
         <div class="stars2"></div>
         <div class="shooting-stars"></div>
       </div>
-    </section>
   );
 }
 

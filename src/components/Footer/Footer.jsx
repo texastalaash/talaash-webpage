@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-content">
         <p className="copyright">© 2022 Texas Talaash</p>
         <p>
-          Created with <i class="fa-solid fa-heart"></i> by{" "}
+          Created with <i className="fa-solid fa-heart"></i> by{" "}
           <a href="https://manishbh.com">Manish Bhandari</a>
         </p>
         <p></p>
