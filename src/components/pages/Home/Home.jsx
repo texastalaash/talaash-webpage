@@ -5,12 +5,29 @@ import Floatingshapes from "../../FloatingShapes/Floatingshapes";
 import Team from "../Team/Team";
 import DanceStyles from "../../DanceStyles/DanceStyles";
 import Contact from "../../Contact/Contact";
+import { useState } from "react";
+import image1 from '../../../assets/cover.jpg'
+import image2 from '../../../assets/cover2.jpg'
+import image3 from "../../../assets/cover3.jpg";
+import Linktree from "./Linktree/Linktree";
 
-export class Home extends Component {
-  render() {
+
+const bgImages = [image1,image2,image3];
+const Home = () => {
+      const [bgImage, setbgImage] = useState(bgImages[0]);
+      const [bgIndex, setBgIndex] = useState(0);
+      const myStyle = {
+        backgroundImage: `url(${bgImage})`,
+      };
+
+      setTimeout(() => {
+        // setbgImage(bgImages[bgIndex]);
+        // setBgIndex((bgIndex + 1) % bgImages.length);
+      }, 3000);
+
     return (
       <>
-        <div className="banner">
+        <div className="banner" style={myStyle}>
           <div className="cover">
             <FadeIn>
               <div className="cover-text">
@@ -41,6 +58,7 @@ export class Home extends Component {
               </div>
             </div>
           </div>
+          <Linktree />
         </div>
         <div className="home-content">
           <div id="about" className="home-about">
@@ -64,6 +82,5 @@ export class Home extends Component {
       </>
     );
   }
-}
 
 export default Home;

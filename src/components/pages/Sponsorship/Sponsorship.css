@@ -29,11 +29,12 @@
 .sponsorship-container h1{
     color: #64aaa1;
     font-size: 30px;
+    font-weight: 500;
 }
 
 .sponsorship-container div h1{
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 25px;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -116,7 +117,7 @@
 }
 
 .gold {
-    border: 3px solid #dab420;
+    border: 2px solid #dab420;
 }
 
 .gold h2{
@@ -147,7 +148,11 @@
 .phone-image img{
     width: 200px;
     margin-top: 40px;
-    /* padding-left: 20px; */
+    transition: all ease-in 0.1s;
+}
+
+.phone-image img:hover {
+    transform: translateY(-4px);
 }
 
 
@@ -158,6 +163,11 @@
 .sponsor-shirt img{
     width: 300px;
     margin-top: 40px;
+    transition: all ease-in 0.1s;
+}
+
+.sponsor-shirt img:hover {
+    transform: translateY(-4px);
 }
 
 @media (max-width: 700px){
