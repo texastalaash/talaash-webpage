@@ -25,6 +25,12 @@
   overflow: hidden;
 }
 
+.bubble-container img{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
 .initials {
   font-size: 35px;
 }
@@ -90,4 +96,22 @@
 
 .image-overlay:hover::after {
   transform: scale(1);
+}
+
+
+@media (max-width: 700px) {
+  .bubble-container{
+    width: 60px;
+    height:60px;
+    font-size: 10px;
+  }
+
+  .hover-name{
+    font-size: 9px;
+  }
+
+  .image-overlay::after{
+    width: 60px;
+    height: 60px;
+  }
 }

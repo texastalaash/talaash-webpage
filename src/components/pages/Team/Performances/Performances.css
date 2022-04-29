@@ -22,15 +22,22 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 60vw;
+  /* max-width: 70vw; */
 }
 
 .video-wrapper {
   margin: 20px;
-  /* width: 400px;
-  height: 237px; */
+  /* width: 200px; */
   border: #b8edd979 1px solid;
   border-radius: 5px;
   padding: 10px;
   overflow: hidden;
+}
+
+@media (max-width: 700px){
+  .video-wrapper{
+    width: 150px;
+    height: 90px;
+    padding: 5px;
+  }
 }

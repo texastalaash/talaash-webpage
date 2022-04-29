@@ -4,19 +4,19 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  padding-top: 170px;
+  padding-top: 130px;
 }
 
-.team-background{
+.team-background {
   position: relative;
 }
 
-.team-background::before{
+.team-background::before {
   content: "";
   position: absolute;
   /* background: url(/src/assets/team.jpg); */
   background-size: cover;
-  background-position:50% 35%;
+  background-position: 50% 35%;
   width: 100%;
   height: 100%;
   top: 0;
@@ -24,40 +24,13 @@
   opacity: 0.02;
 }
 
-
-.top-slides-display {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  /* margin: 0 20px; */
-}
-
-.team-container .team-title {
-  color: white;
-  font-weight: 400;
+.team-title {
+  color: #85efe1;
+  font-weight: 200;
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.floating-left {
-  position: absolute;
-  width: 500px;
-  left: -185px;
-  top: -180px;
-  z-index: -1;
-  /* display: none; */
-}
-
-.floating-right {
-  position: absolute;
-  width: 350px;
-  top: -130px;
-  right: -120px;
-  z-index: -1;
+  letter-spacing: 10px;
 }
 
 .team-container hr {
@@ -74,26 +47,23 @@
   /* padding: 20px 0 0px 0; */
 }
 
-.season-about h1{
+.season-about h1 {
   font-size: 28px;
   margin-bottom: 10px;
 }
 
-.season-content p{
+.season-content p {
   color: white;
 }
 
-
-
-.competitions{
+.competitions {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px 0;
 }
 
-
-.competition img{
+.competition img {
   height: 100px;
   clip-path: circle();
 }
@@ -102,24 +72,23 @@
   padding: 15px;
 }
 
-
-.competition h1{
+.competition h1 {
   font-size: 20px;
   margin-bottom: 0;
 }
 
-.competition p{
+.competition p {
   font-size: 12px;
 }
 
-.competition-details{
+.competition-details {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   line-height: 2;
 }
 
-.season-content{
-    display: flex;
+.season-content {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -128,61 +97,130 @@
   line-height: 35px;
 }
 
-.competition .placement{
+.competition .placement {
   color: #dab420;
 }
 
-.soundcloud-player{
+.soundcloud-player {
   font-size: 10px;
-   color: #d818c27b;
-   line-break: anywhere;
-   word-break: normal;
+  color: #d818c27b;
+  line-break: anywhere;
+  word-break: normal;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; 
-  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  text-overflow: ellipsis;
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+    Garuda, Verdana, Tahoma, sans-serif;
   font-weight: 100;
+  /* width: 200px; */
+  /* max-width: 10px; */
 }
 
-.soundcloud-player a{
+.soundcloud-player a {
   color: white;
   text-decoration: none;
 }
 
-
-.soundcloud-container{
+.soundcloud-container {
   margin: 50px 0 150px;
-  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: ce;
 }
 
-@media (max-width: 1000px) {
-  /* .top-slides-display {
-    transform: scale(0.7);
-  } */
+.slider-container {
+  border-radius: 2vw;
+  width: 80vw;
+  max-width: 750px;
+  height: calc(80vw - 200px) !important;
+  min-height: 230px;
+  max-height: 500px;
+  position: relative;
 }
 
-@media (max-width: 900px) {
-  .team-container .team-title {
-    color: white;
-    font-weight: 400;
+.slider-container div div div button {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.slider-container div div div button {
+  color: #64aaa1;
+}
+
+.floating-left {
+  position: absolute;
+  z-index: 2;
+  width: 500px;
+  left: -210px;
+  top: -250px;
+  z-index: -1;
+}
+
+.floating-right {
+  position: absolute;
+  width: 350px;
+  top: -200px;
+  right: -120px;
+  z-index: -1;
+}
+
+.top-slides-display {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* z-index: 2; */
+  margin: 0 20px;
+}
+
+.slider-border {
+  border: 1px solid #63aaa1;
+  border-radius: 2vw;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .team-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team-title {
     font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 7px;
   }
-
   .floating-left {
-    position: absolute;
-    width: 280px;
-    left: -107px;
+    width: 180px;
+    left: -70px;
+    top: -120px;
+  }
+  .floating-right {
+    width: 130px;
     top: -110px;
-    z-index: -1;
+    right: -25px;
   }
 
-  .floating-right {
-    position: absolute;
-    width: 175px;
-    top: -70px;
-    right: -55px;
-    z-index: -1;
+  .competition img {
+    height: 60px;
+    clip-path: circle();
+  }
+
+  .competition h1 {
+    font-size: 15px;
+  }
+
+  .competition p {
+    font-size: 10px;
+  }
+
+  .season-about h1 {
+    font-size: 26px;
+  }
+
+  .season-content p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
   }
 }

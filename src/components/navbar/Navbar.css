@@ -117,8 +117,103 @@ header .close {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 700px) {
-  header div{
-    display: none;
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #64aaa1;
+  align-items: center;
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .menu-icon{
+    display: block;
+  }
+
+  .fa-times{
+    font-size: 2rem;
+  }
+  .navbar-items-container{
+    position: relative;
+  }
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 68px;  
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active{
+    background: #10191b;
+    left:0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+
+  header ul{
+    height: 200px;
+
+  }
+
+header ul ul li{
+  display: block;
+  list-style: none;
+	 padding: 0;
+	 border-radius: 0.2rem;
+	 transition: background-color 200ms ease-in-out;
+}
+
+header ul li a:hover{
+  background-color: #64aaa1;
+  color: white;
+  opacity: 1;
+}
+
+  header ul li a{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+       font-size: 20px;
+       font-weight:500;
+
+  }
+
+  header ul ul{
+    position:static;
+	 background-color: #10191b;
+	 border-radius: 0.3rem;
+	 flex-direction: column;
+	 opacity: 100%;
+	 visibility:visible;
+  transition: all 0.5s ease-in-out;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+  }
+
+  header ul ul a{
+    width: 100%;
+  }
+
+  header ul li:hover > ul{
+    height: 128px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  header .logo {
+    margin-left: 20px;
   }
 }

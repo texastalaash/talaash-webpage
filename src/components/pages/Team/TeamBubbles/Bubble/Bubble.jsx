@@ -6,13 +6,15 @@ const Bubble = ({ name, isCap, info, year }) => {
   let first = full_name[0];
   let last = full_name[1];
   const initial = first[0] + last[0];
+  const fileName = `${first}-${last}.jpg`
 
   return (
     <div className={isCap ? "cap-border" : "no-border-bubble-container"}>
       <div className="bubble-container">
         <img
           className="bubble-image"
-          src={`/assets/team-pics/${year}/headshots/${name}.jpg`}
+          src={`/assets/team-pics/${year}/headshots/${fileName}`}
+          // src={`/assets/team-pics/3/headshots/ManishBhandari.jpg`}
           alt={initial}
           onError={() => <h1>hey</h1>}
         />

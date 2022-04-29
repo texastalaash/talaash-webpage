@@ -30,13 +30,17 @@
 /* Left contact page */
 .form-horizontal {
   /*float: left;*/
-  max-width: 400px;
+  /* min-width: 400px; */
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  /* width: 400px; */
   align-items: center;
+    width: 100%;
+    padding: 0 40px;
+    max-width: 600px;
 }
+
 
 .form-control, 
 textarea {

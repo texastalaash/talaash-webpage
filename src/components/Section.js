@@ -1,10 +1,8 @@
 import Home from "./pages/Home/Home";
-import About from "./pages/About";
 import Team from "./pages/Team/Team";
 import { Route, Switch } from "react-router-dom";
 import Profile from "./pages/Profile/Profile";
 import Timeline from "./pages/Team/Timeline/Timeline";
-import UnderConstruction from "./Underconstruction/UnderConstruction";
 import { useEffect } from "react";
 
 
@@ -21,7 +19,6 @@ const Section = () => {
   return (
     <section>
       <Switch>
-        {/* <Route path = "" component={UnderConstruction} /> */}
         <Route path="/" component={Home} exact />
         <Route exact path="/team" component={Timeline}></Route>
         <Route

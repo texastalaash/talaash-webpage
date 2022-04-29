@@ -22,7 +22,7 @@ const Timeline = () => {
                   </p>
                   <div className="card-border">
                     <Link to={`/team/${index + 1}`}>
-                      <img src={year.src} alt="team image" />
+                      <img src={year.src} alt="team" />
                     </Link>
                   </div>
                 </div>

@@ -431,10 +431,10 @@ export const data = {
     ],
     sliderTotal: 5,
     performances: [
-      "https://www.youtube.com/watch?v=pio6rOe31ag",
-      "https://www.youtube.com/watch?v=cML5p3-Lotc",
-      "https://www.youtube.com/watch?v=NrIFmcSifHM",
-      "https://www.youtube.com/watch?v=LCnV47xrN4I",
+      "pio6rOe31ag",
+      "cML5p3-Lotc",
+      "NrIFmcSifHM",
+      "LCnV47xrN4I",
     ],
   },
 };

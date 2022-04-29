@@ -1,13 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import FadeIn from "react-fade-in";
-import Slider from "../../slider/Slider";
 import Performances from "./Performances/Performances";
 import TeamBubbles from "./TeamBubbles/TeamBubbles";
+import SimpleImageSlider from "react-simple-image-slider";
 
 import "./Team.css";
 import { useParams } from "react-router-dom";
 import { data } from "./data";
-import { useLocation } from "react-router-dom";
 import { YearData } from "./Timeline/YearData";
 
 const Team = ({ current }) => {
@@ -33,18 +32,30 @@ const Team = ({ current }) => {
         <div className="team-container">
           <div className="top-slides-display">
             <h1 className="team-title">Talaash {year}.0</h1>
-
-            <Slider images={sliderImages} />
-            <img
-              className="floating-left"
-              src={`/assets/team-pics/${year}/floating/left.png`}
-              alt="floating-left"
-            />
-            <img
-              className="floating-right"
-              src={`/assets/team-pics/${year}/floating/right.png`}
-              alt="floating-right"
-            />
+            <div className="slider-border">
+              <div className="slider-container">
+                <SimpleImageSlider
+                  width={"100%"}
+                  height={"100%"}
+                  images={sliderImages}
+                  showBullets={true}
+                  showNavs={true}
+                  autoPlay={true}
+                  bgColor={"none"}
+                  navSize={window.innerWidth < 700 ? '25' : '40'}
+                ></SimpleImageSlider>
+                <img
+                  className="floating-left"
+                  src={`/assets/team-pics/${year}/floating/left.png`}
+                  alt="floating-left"
+                />
+                <img
+                  className="floating-right"
+                  src={`/assets/team-pics/${year}/floating/right.png`}
+                  alt="floating-right"
+                />
+              </div>
+            </div>
           </div>
           <hr />
           <TeamBubbles team={teamdata} year={year} />
@@ -74,7 +85,7 @@ const Team = ({ current }) => {
           )}
 
           <Performances videos={performances} />
-          {soundclouds[year - 1]}  
+          {soundclouds[year - 1]}
         </div>
       </div>
     </FadeIn>
@@ -88,7 +99,8 @@ const Mix = () => {
         width="100%"
         height="166"
         scrolling="no"
-        frameborder="no"
+        title="Soundcloud"
+        frameBorder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/780108895&color=%2352847c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
       ></iframe>
@@ -97,18 +109,10 @@ const Mix = () => {
           href="https://soundcloud.com/akhilesh-yeleswarapu"
           title="DJ Khila"
           target="_blank"
+          rel="noreferrer"
           style={{ color: "#ccccc" }}
         >
           DJ Khila
-        </a>{" "}
-        ·{" "}
-        <a
-          href="https://soundcloud.com/akhilesh-yeleswarapu/texas-talaash-1"
-          title="Texas Talaash 1.0 ft. DJ Law, Aka$h, DJ RB  [EXPLICIT] (no voiceovers)"
-          target="_blank"
-          style="color: #cccccc; text-decoration: none;"
-        >
-          Texas Talaash 1.0 ft. DJ Law, Aka$h, DJ RB [EXPLICIT] (no voiceovers)
         </a>
       </div>
     </div>
@@ -122,7 +126,8 @@ const Mix2 = () => {
         width="100%"
         height="166"
         scrolling="no"
-        frameborder="no"
+        title="Soundcloud"
+        frameBorder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1248566905&color=%2352847c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
       ></iframe>
@@ -131,16 +136,10 @@ const Mix2 = () => {
           href="https://soundcloud.com/abhishek-arnipalli"
           title="DJ ABHZ"
           target="_blank"
+          rel="noreferrer"
           style={{ color: "#ccccc" }}
         >
           DJ ABHZ
-        </a>
-        <a
-          href="https://soundcloud.com/abhishek-arnipalli/texas-talaash-2020-2021-team-mix-ft-bunny"
-          title="Texas Talaash 2020 - 2021 Team Mix (ft. BUNNY)"
-          target="_blank"
-        >
-          Texas Talaash 2020 - 2021 Team Mix (ft. BUNNY)
         </a>
       </div>
     </div>
@@ -154,28 +153,11 @@ export const Mix3 = () => {
         width="100%"
         height="166"
         scrolling="no"
-        frameborder="no"
+        title="Soundcloud"
+        frameBorder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1254518806&color=%233ec891&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
       ></iframe>
-      <div className="soundcloud-player">
-        <a
-          href="https://soundcloud.com/kabir_bhakta"
-          title="BUNNY"
-          target="_blank"
-          style={{ color: "#ccccc" }}
-        >
-          BUNNY
-        </a>
-        <a
-          href="https://soundcloud.com/kabir_bhakta/texas-talaash-legends-2022"
-          title="Texas Talaash @ Legends 2022 (ft. Bassdoctor, DJ Subsonic, cHAoS, D-ASH)"
-          target="_blank"
-        >
-          Texas Talaash @ Legends 2022 (ft. Bassdoctor, DJ Subsonic, cHAoS,
-          D-ASH)
-        </a>
-      </div>
     </div>
   );
 };

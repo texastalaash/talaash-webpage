@@ -1,11 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Home.css";
 import FadeIn from "react-fade-in";
-import Floatingshapes from "../../FloatingShapes/Floatingshapes";
-import Team from "../Team/Team";
 import DanceStyles from "../../DanceStyles/DanceStyles";
 import Contact from "../../Contact/Contact";
-import { useState } from "react";
 import image1 from '../../../assets/cover.jpg'
 import image2 from '../../../assets/cover2.jpg'
 import image3 from "../../../assets/cover3.jpg";
@@ -14,16 +11,11 @@ import Linktree from "./Linktree/Linktree";
 
 const bgImages = [image1,image2,image3];
 const Home = () => {
-      const [bgImage, setbgImage] = useState(bgImages[0]);
-      const [bgIndex, setBgIndex] = useState(0);
+      // const [bgImage, setbgImage] = useState(bgImages[0]);
+      // const [bgIndex, setBgIndex] = useState(0);
       const myStyle = {
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${bgImages[0]})`,
       };
-
-      setTimeout(() => {
-        // setbgImage(bgImages[bgIndex]);
-        // setBgIndex((bgIndex + 1) % bgImages.length);
-      }, 3000);
 
     return (
       <>
