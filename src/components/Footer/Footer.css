@@ -62,3 +62,16 @@
 		 transform: translate3d(-75%, 0%, 0);
 	}
 }
+
+@media (max-width: 700px){
+    .footer p{
+        padding: 10px;
+    }
+    .creator{
+        font-size: 11px;
+    }
+
+    .copyright{
+        font-size: 11px;
+    }
+}
