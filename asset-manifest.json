@@ -1,25 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b35f35e4.chunk.css",
-    "main.js": "/static/js/main.4f4b729e.chunk.js",
-    "main.js.map": "/static/js/main.4f4b729e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b9a45410.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b9a45410.js.map",
-    "static/js/2.020a6d4c.chunk.js": "/static/js/2.020a6d4c.chunk.js",
-    "static/js/2.020a6d4c.chunk.js.map": "/static/js/2.020a6d4c.chunk.js.map",
+    "main.css": "/static/css/main.57afb079.css",
+    "main.js": "/static/js/main.1968f017.js",
+    "static/media/cover2.jpg": "/static/media/cover2.a6e0705458f2d558f250.jpg",
+    "static/media/cover.jpg": "/static/media/cover.3b35280ec9e6b5c7f2e0.jpg",
+    "static/media/cover3.jpg": "/static/media/cover3.4451137ba0373f1828f7.jpg",
+    "static/media/team.jpg": "/static/media/team.a9ff2f6860be6d323c3e.jpg",
+    "static/media/raw-logo.svg": "/static/media/raw-logo.0a102ddf8ff023678bca.svg",
+    "static/media/logo.svg": "/static/media/logo.5036352916d60cecd2090065d469e854.svg",
     "index.html": "/index.html",
-    "static/css/main.b35f35e4.chunk.css.map": "/static/css/main.b35f35e4.chunk.css.map",
-    "static/js/2.020a6d4c.chunk.js.LICENSE.txt": "/static/js/2.020a6d4c.chunk.js.LICENSE.txt",
-    "static/media/cover.3b35280e.jpg": "/static/media/cover.3b35280e.jpg",
-    "static/media/cover2.a6e07054.jpg": "/static/media/cover2.a6e07054.jpg",
-    "static/media/cover3.4451137b.jpg": "/static/media/cover3.4451137b.jpg",
-    "static/media/logo.50363529.svg": "/static/media/logo.50363529.svg",
-    "static/media/App.css": "/static/media/team.a9ff2f68.jpg"
+    "main.57afb079.css.map": "/static/css/main.57afb079.css.map",
+    "main.1968f017.js.map": "/static/js/main.1968f017.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b9a45410.js",
-    "static/js/2.020a6d4c.chunk.js",
-    "static/css/main.b35f35e4.chunk.css",
-    "static/js/main.4f4b729e.chunk.js"
+    "static/css/main.57afb079.css",
+    "static/js/main.1968f017.js"
   ]
 }
